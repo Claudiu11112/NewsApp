@@ -1,0 +1,19 @@
+.scl {
+    color:black;
+    padding: 4px;
+    background: gray;
+    text-align: left;
+    border-width: 0px;
+    outline: 0px;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    /* padding-top: 0.35rem;
+    padding-right: 1rem;
+    padding-bottom: 0.35rem; */
+    padding-left: 1rem;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: lightgray;
+    opacity: 1; /* Firefox */
+    text-align: center   
+}
