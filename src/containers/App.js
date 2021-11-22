@@ -8,20 +8,20 @@ class App extends Component {
     super(props);
     this.state = {
       robots: [],
-      searchfield: ""
+      searchfield: "",
     };
   }
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/posts")
-      .then(response => response.json())
-      .then(users => this.setState({ robots: users }));
+      .then((response) => response.json())
+      .then((users) => this.setState({ robots: users }));
   }
-  onSearchChange = event => {
+  onSearchChange = (event) => {
     this.setState({ searchfield: event.target.value });
   };
 
   render() {
-    const filteredCards = this.state.robots.filter(robot => {
+    const filteredCards = this.state.robots.filter((robot) => {
       return robot.title
         .toLowerCase()
         .includes(this.state.searchfield.toLowerCase());
@@ -37,12 +37,17 @@ class App extends Component {
             {/* </Scroll> */}
           </div>
 
-          <div className="ma0 pa2 fixed left-0 top-0 right-0" style={{background:"#15202a"}}>
-            <h1 className="dib ma1 blue hover-dark-blue"><strong>News</strong> <span className="f4">App</span> </h1>
+          <div
+            className="ma0 pa2 fixed left-0 top-0 right-0"
+            style={{ background: "#15202a" }}
+          >
+            <h1 className="dib ma1 blue hover-dark-blue">
+              <strong>News</strong> <span className="f4">App</span>{" "}
+            </h1>
             <span className="dib ma2 w-15 fr">
               <SearchBox searchChange={this.onSearchChange} />
             </span>
-             {/* <h4 className="dib gray fr hover-dark-blue">CONTACT</h4> */}
+            {/* <h4 className="dib gray fr hover-dark-blue">CONTACT</h4> */}
           </div>
         </div>
       );
