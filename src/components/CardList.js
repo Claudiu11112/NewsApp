@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
-import Footer1 from "../components/Footer1";
+
 
 const CardList = ({ cards }) => {
   return (
@@ -16,9 +16,7 @@ const CardList = ({ cards }) => {
           />
         );
       })}
-      <div className="">
-        <Footer1 />
-      </div>
+      
     </div>
   );
 };

@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import CardList from "../components/CardList";
-import SearchBox from "../components/SearchBox";
+import Header from "../components/Header";
 // import Scroll from "../components/Scroll";
+import Footer1 from "../components/Footer1";
+import "./App.css";
 
 class App extends Component {
   constructor(props) {
@@ -30,25 +32,12 @@ class App extends Component {
       return <h1>Loading...</h1>;
     } else {
       return (
-        <div className="">
-          <div className="tc relative ma1" style={{ top: 80 }}>
-            {/* <Scroll> */}
-            <CardList cards={filteredCards} />
-            {/* </Scroll> */}
-          </div>
-
-          <div
-            className="ma0 pa2 fixed left-0 top-0 right-0"
-            style={{ background: "#15202a" }}
-          >
-            <h1 className="dib ma1 blue hover-dark-blue">
-              <strong>News</strong> <span className="f4">App</span>{" "}
-            </h1>
-            <span className="dib ma2 w-15 fr">
-              <SearchBox searchChange={this.onSearchChange} />
-            </span>
-            {/* <h4 className="dib gray fr hover-dark-blue">CONTACT</h4> */}
-          </div>
+        <div className="app">
+          {/* <Scroll> */}
+          <CardList cards={filteredCards} />
+          {/* </Scroll> */}
+          <Header onSearchChange={this.onSearchChange}></Header>
+          <Footer1 />
         </div>
       );
     }

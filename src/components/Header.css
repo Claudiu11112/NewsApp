@@ -1,0 +1,15 @@
+.header {
+  /* position: relative;
+  display: block;
+  clear: both;
+  padding: 2px 0px; */
+  text-transform: uppercase;
+  background: #15202a;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
