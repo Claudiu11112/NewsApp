@@ -1,24 +1,25 @@
 .scl {
-    color:#111;
-    padding: 4px;
-    background: rgba(255, 255, 255, .35);
-    text-align: center;
-    border-width: 0px;
-    outline: 0px;
-    border-radius: 10em;
-    font-size: 1.2rem;
-    /* padding-top: 0.35rem;
-    padding-right: 1rem;
-    padding-bottom: 0.35rem; */
-    /* padding-left: 1rem; */
-     display: inline-block;
-     margin-left: 80px;
-  margin-right: 20px;
+  color: #111;
+  padding: 4px;
+  background: rgba(255, 255, 255, 0.35);
+  text-align: center;
+  border-width: 0px;
+  outline: 0px;
+  border-radius: 10em;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
   margin-top: 0;
   margin-bottom: 0;
+  /* padding-top: 0.35rem; */
+  /* padding-right: 1rem; */
+  /* padding-bottom: 0.35rem;  */
+  /* padding-left: 1rem; */
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: lightgray;
-    opacity: 1; /* Firefox */
-    text-align: center   
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgray;
+  opacity: 1; /* Firefox */
+  text-align: center;
 }

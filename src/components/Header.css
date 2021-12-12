@@ -1,8 +1,4 @@
 .header {
-  /* position: relative;
-  display: block;
-  clear: both;
-  padding: 2px 0px; */
   text-transform: uppercase;
   background: #15202a;
   position: fixed;
@@ -12,4 +8,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* position: relative;
+  display: block;
+  clear: both;
+  padding: 2px 0px; */
 }

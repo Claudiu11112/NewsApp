@@ -8,7 +8,7 @@ const SearchBox = ({ searchChange }) => {
       type="search"
       placeholder="Search"
       onChange={searchChange}
-      style={{ width: 160 }}
+      style={{ width: 140 }}
     />
   );
 };

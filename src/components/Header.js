@@ -8,7 +8,7 @@ const Header = (props) => {
   return (
     <div className="header pa2 tl">
       <NewsApp />
-      <div>
+      <div className="tr items-center flex">
         <Contact />
         <SearchBox searchChange={props.onSearchChange} />
       </div>

@@ -1,7 +1,6 @@
 .cont {
-  /* border: 1px solid #ccc; */
-  /* background: #f4f4f4; */
-  /* padding: 20px; */
+  display: inline-block;
+  align-items: center;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 0;
@@ -9,11 +8,13 @@
   cursor: pointer;
   font-size: 1.25em;
   /* box-sizing: border-box; */
-  /* /* margin: 0 !important; */
-  /* padding: 0 !important;
-  border:none !important;  */
+  /* margin: 0 !important; */
+  /* padding: 0 !important; */
+  /* border:none !important;   */
   /* text-align: left !important; */
-  display: inline-block;
-  width: 10%;
+  /* width: 10%; */
   /* display: flex; */
+  /* border: 1px solid #ccc; */
+  /* background: #f4f4f4; */
+  /* padding: 20px; */
 }
