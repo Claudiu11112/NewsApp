@@ -4,7 +4,7 @@ import Card from "./Card";
 
 const CardListBig = ({ cards, showNew, id }) => {
   // let id = this.state.id;
-   alert("I'm an alert  " + cards[9].id);
+  //  alert("I'm an alert  " + cards[9].id);
   return (
     <div onClick={showNew}>
       <CardBig
