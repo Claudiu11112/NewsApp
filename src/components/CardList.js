@@ -1,11 +1,13 @@
 import React from "react";
 import Card from "../components/Card";
 
-
-const CardList = ({ cards }) => {
+const CardList = ({ cards, showNews }) => {
+  // const showNews = () => {
+  //   alert("I'm an alert  " );
+  // };
   return (
-    <div>
-      {""}
+    <div onClick={showNews}>
+      {/* onClick={showNews} */}
       {cards.map((card, i) => {
         return (
           <Card
@@ -16,7 +18,6 @@ const CardList = ({ cards }) => {
           />
         );
       })}
-      
     </div>
   );
 };
