@@ -11,16 +11,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      robots: [],
+      idtb: [],
       searchfield: "",
       showN: false,
-      id: 2,
+      ids: 7,
     };
   }
   componentDidMount() {
     fetch("https://jsonplaceholder.typicode.com/posts")
       .then((response) => response.json())
-      .then((users) => this.setState({ robots: users }));
+      .then((users) => this.setState({ idtb: users }));
   }
   onSearchChange = (event) => {
     this.setState({ searchfield: event.target.value });
@@ -35,21 +35,23 @@ class App extends Component {
   };
 
   render() {
+    const showId = this.state.idtb;
     const showN = this.state.showN;
+    const ids = this.state.ids;
     // alert("I'm an alert  "+ this.showN);
-    const filteredCards = this.state.robots.filter((robot) => {
-      return robot.title
+    const filteredCards = this.state.idtb.filter((idtb) => {
+      return idtb.title
         .toLowerCase()
         .includes(this.state.searchfield.toLowerCase());
     });
-    if (this.state.robots.length === 0) {
+    if (this.state.idtb.length === 0) {
       return <h1>Loading...</h1>;
     } else if (showN === true) {
       // alert("I'm an alert  "+ this.showN);
       return (
         <div className="app">
           {/* <Scroll> */}
-          <CardListBig cards={filteredCards} showNew={this.showNew}/>
+          <CardListBig card={showId} showNew={this.showNew} showId={ids} />
           {/* </Scroll> */}
           <Header onSearchChange={this.onSearchChange}></Header>
           <Footer1 />

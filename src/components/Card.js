@@ -1,13 +1,15 @@
 import React from "react";
 // import CardListBig from "./CardListBig";
 
-const Card = ({ title, body, id }) => {
+const Card = ({ title, body, id, }) => {
   const showId = () => {
-    alert("I'm an alert  " + id);
-    // this.setState({ id: id });
+    let cc = id;
+    // alert("I'm an alert  " + cc);
+    // this.setState({ ids: id });
     // const id = this.id;
-    return id;
+    return cc;
   };
+  
   // const [id] = useState({id:id});
   return (
     <div className="tc bg-white dib br3 pa0 ma2 grow shadow-5 measure-narrow">
