@@ -7,7 +7,6 @@ const CardList = ({ cards, showNews }) => {
   // };
   return (
     <div onClick={showNews}>
-      {/* onClick={showNews} */}
       {cards.map((card, i) => {
         return (
           <Card

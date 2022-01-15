@@ -5,7 +5,6 @@ import Header from "../components/Header";
 import Footer1 from "../components/Footer1";
 import "./App.css";
 import CardListBig from "../components/CardListBig";
-// import Card from "../components/Card";
 
 class App extends Component {
   constructor(props) {
@@ -27,18 +26,15 @@ class App extends Component {
   };
   showNews = () => {
     this.setState({ showN: true });
-    // alert("I'm an alert  " + this.showN);
   };
   showNew = () => {
     this.setState({ showN: false });
-    // alert("I'm an alert  " + this.showN);
   };
 
   render() {
     const showId = this.state.idtb;
     const showN = this.state.showN;
     const ids = this.state.ids;
-    // alert("I'm an alert  "+ this.showN);
     const filteredCards = this.state.idtb.filter((idtb) => {
       return idtb.title
         .toLowerCase()
@@ -50,9 +46,7 @@ class App extends Component {
       // alert("I'm an alert  "+ this.showN);
       return (
         <div className="app">
-          {/* <Scroll> */}
           <CardListBig card={showId} showNew={this.showNew} showId={ids} />
-          {/* </Scroll> */}
           <Header onSearchChange={this.onSearchChange}></Header>
           <Footer1 />
         </div>
@@ -65,7 +59,6 @@ class App extends Component {
           {/* </Scroll> */}
           <Header onSearchChange={this.onSearchChange}></Header>
           <Footer1 />
-          {/* <Card showNews={this.showNews} /> */}
         </div>
       );
     }

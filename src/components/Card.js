@@ -1,12 +1,9 @@
 import React from "react";
-// import CardListBig from "./CardListBig";
 
 const Card = ({ title, body, id, }) => {
   const showId = () => {
     let cc = id;
     // alert("I'm an alert  " + cc);
-    // this.setState({ ids: id });
-    // const id = this.id;
     return cc;
   };
   
@@ -24,7 +21,6 @@ const Card = ({ title, body, id, }) => {
         <h2 className="f4 tj pa3 ma0">{title}</h2>
         <p className="f5 tj pa3 ma0">{body + "  " + id}</p>
       </div>
-      {/* <button onClick={showAlert}>show alert</button>; */}
     </div>
   );
 };
