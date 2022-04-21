@@ -7,7 +7,6 @@ const Card = ({ title, body, id, }) => {
     return cc;
   };
   
-  // const [id] = useState({id:id});
   return (
     <div className="tc bg-white dib br3 pa0 ma2 grow shadow-5 measure-narrow">
       {/* <img alt='robots' src={`https://robohash.org/${id}?200x200`} /> */}
